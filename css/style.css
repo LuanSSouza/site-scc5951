@@ -20,3 +20,12 @@ header > img {
     font-weight: bold;
 }
 /* Populares */
+
+/* Card */
+.card > img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/* Card */
