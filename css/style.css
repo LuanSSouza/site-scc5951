@@ -1,0 +1,22 @@
+/* Header */
+header {
+    background-color: gray;
+    display: flex;
+}
+
+header > img {
+    width: 50px;
+}
+/* Header */
+
+/* Novidades */
+.novidades > h2 {
+    font-weight: bold;
+}
+/* Novidades */
+
+/* Populares */
+.populares > h2 {
+    font-weight: bold;
+}
+/* Populares */
