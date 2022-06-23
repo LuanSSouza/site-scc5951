@@ -62,6 +62,8 @@ header input {
 /* Novidades */
 .novidades {
     overflow: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .novidades > h2 {
@@ -72,6 +74,8 @@ header input {
 /* Populares */
 .populares {
     overflow: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .populares > h2 {
@@ -112,3 +116,28 @@ header input {
     margin-bottom: 5px;
 }
 /* Card */
+
+/* Footer */
+footer {
+    height: 200px;
+    bottom: 0;
+    display: flex;
+}
+
+footer > div {
+   margin-left: 20px;
+   margin-right: 40px;
+}
+
+footer ul {
+    margin-top: 5px;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+/* Footer */
