@@ -6,6 +6,12 @@ var novidades = [
     title: "R$ 300,00",
     type: "Corrida Casual",
   },
+  {
+    img: "img/tenis1.jpg",
+    name: "Tenis de corrida",
+    title: "R$ 300,00",
+    type: "Corrida Casual",
+  },
 ];
 
 // Criando dados dos cards populares
