@@ -9,6 +9,22 @@ header > img {
 }
 /* Header */
 
+/* Slides */
+.slide-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide > img {
+    width: 100%;
+}
+/* Slides */
+
 /* Novidades */
 .novidades {
     overflow: auto;
