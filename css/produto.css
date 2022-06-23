@@ -1,0 +1,20 @@
+#produto {
+    display: flex;
+}
+
+/* Slide Produto */
+#slider-produto {
+    max-width: 500px;
+}
+
+#slider-imagem {
+    border-radius: 20px;
+    width: 100%;
+}
+/* Slide Produto */
+
+/* Informações Produto */
+#informacoes-produto {
+    padding: 10px;
+}
+/* Informações Produto */
