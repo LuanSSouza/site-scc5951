@@ -25,6 +25,7 @@ header > div {
     display:inline-block;
     position: relative;
 }
+
 .input-container > i {
     position: absolute;
     padding: 4px;
@@ -77,8 +78,18 @@ header input {
     font-weight: bold;
 }
 
-.itens-populares {
+.categorias-populares {
     margin-bottom: 10px;
+    display: flex;
+}
+
+.categorias-populares > div {
+    margin: auto;
+}
+
+.categorias-populares a {
+    color: black;
+    text-decoration: none;
 }
 /* Populares */
 
