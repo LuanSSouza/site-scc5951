@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/produto.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <title>IPÉ</title>
   </head>
   <body>
@@ -15,17 +19,20 @@
       <div>FEMININO</div>
       <div>INFANTIL</div>
       <div>COMPRA RÁPIDA</div>
-      <input type="text" name="busca" id="busca" />
+      <div class="input-container">
+        <i class="material-icons">search</i>
+        <input type="text" name="input-busca" id="input-busca" />
+        <i class="material-icons final">mic</i>
+      </div>
+      <div><i class="material-icons">offline_bolt</i></div>
+      <div><i class="material-icons">account_circle</i></div>
+      <div><i class="material-icons">shopping_cart</i></div>
     </header>
     <main>
       <h1>Corrida Casual</h1>
       <div id="produto">
         <div id="slider-produto">
-          <img
-            src="img/tenis1.jpg"
-            alt="Tenis de Corrida"
-            id="slider-imagem"
-          />
+          <img src="img/tenis1.jpg" alt="Tenis de Corrida" id="slider-imagem" />
         </div>
         <div id="informacoes-produto">
           <div id="produto-nome">Corrida Casual: <b>Tênis Corrida</b></div>
@@ -39,7 +46,11 @@
               <option value="41">41</option>
             </select>
             <label for="input-quantidade">Quantidade</label>
-            <input type="number" name="input-quantidade" id="input-quantidade">
+            <input
+              type="number"
+              name="input-quantidade"
+              id="input-quantidade"
+            />
           </div>
           <div id="produto-provador">
             <a href="#">Medidas</a>
@@ -51,68 +62,80 @@
           </div>
           <div id="produto-frete">
             <label for="input-frete">Frete</label>
-            <input type="text" name="input-quantidade" id="input-quantidade">
+            <input type="text" name="input-quantidade" id="input-quantidade" />
           </div>
         </div>
       </div>
     </main>
+    <hr/>
     <footer>
-      <div>
+      <div class="footer-produtos">
         <b>PRODUTOS</b>
-        <a href="#">Calçados</a>
-        <a href="#">Tênis</a>
-        <a href="#">Roupas</a>
-        <a href="#">Acessórios</a>
-        <a href="#">Chuteiras</a>
-        <a href="#">Quebra Vento</a>
-        <a href="#">Novidades</a>
-        <a href="#">Black Friday</a>
-        <a href="#">Outlet</a>
-        <a href="#">Cyber Monday</a>
-        <a href="#">adiClub</a>
-        <a href="#">adidas em Casa</a>
-        <a href="#">adidas app</a>
-        <a href="#">adidas Runner</a>
+        <ul>
+          <li><a href="#">Calçados</a></li>
+          <li><a href="#">Tênis</a></li>
+          <li><a href="#">Roupas</a></li>
+          <li><a href="#">Acessórios</a></li>
+          <li><a href="#">Chuteiras</a></li>
+          <li><a href="#">Quebra Vento</a></li>
+          <li><a href="#">Novidades</a></li>
+          <li><a href="#">Black Friday</a></li>
+          <li><a href="#">Outlet</a></li>
+          <li><a href="#">Cyber Monday</a></li>
+          <li><a href="#">adiClub</a></li>
+          <li><a href="#">adidas em Casa</a></li>
+          <li><a href="#">adidas app</a></li>
+          <li><a href="#">adidas Runner</a></li>
+        </ul>
       </div>
       <div>
         <b>ESPORTES</b>
-        <a href="#">Futebol</a>
-        <a href="#">São Paulo</a>
-        <a href="#">Internacional</a>
-        <a href="#">Flamengo</a>
-        <a href="#">Federação</a>
-        <a href="#">Cruzeiro</a>
-        <a href="#">Corrida</a>
-        <a href="#">Basquete</a>
-        <a href="#">Training</a>
+        <ul>
+          <li><a href="#">Futebol</a></li>
+          <li><a href="#">São Paulo</a></li>
+          <li><a href="#">Internacional</a></li>
+          <li><a href="#">Flamengo</a></li>
+          <li><a href="#">Santos</a></li>
+          <li><a href="#">Federação</a></li>
+          <li><a href="#">Cruzeiro</a></li>
+          <li><a href="#">Corrida</a></li>
+          <li><a href="#">Basquete</a></li>
+          <li><a href="#">Training</a></li>
+        </ul>
       </div>
       <div>
         <b>SUPORTE</b>
-        <a href="#">Podemos Ajudar?</a>
-        <a href="#">Atendimento ao Cliente</a>
-        <a href="#">Dúvidas Frequentes</a>
-        <a href="#">Tabela de Tamanhos</a>
-        <a href="#">Vendas por Whatsapp</a>
-        <a href="#">Como Comprar</a>
-        <a href="#">Entregas e Frete</a>
-        <a href="#">Opções de Pagamento</a>
-        <a href="#">Troca e Devolução</a>
-        <a href="#">Usando Nosso Site</a>
-        <a href="#">Como Saber o Tamanho do seu Top</a>
-        <a href="#">O que é o adiClub</a>
-        <a href="#">Mapa do Site</a>
+        <ul>
+          <li><a href="#">Podemos Ajudar?</a></li>
+          <li><a href="#">Atendimento ao Cliente</a></li>
+          <li><a href="#">Dúvidas Frequentes</a></li>
+          <li><a href="#">Tabela de Tamanhos</a></li>
+          <li><a href="#">Vendas por Whatsapp</a></li>
+          <li><a href="#">Como Comprar</a></li>
+          <li><a href="#">Entregas e Frete</a></li>
+          <li><a href="#">Opções de Pagamento</a></li>
+          <li><a href="#">Troca e Devolução</a></li>
+          <li><a href="#">Usando Nosso Site</a></li>
+          <li><a href="#">Como Saber o Tamanho do seu Top</a></li>
+          <li><a href="#">O que é o adiClub</a></li>
+          <li><a href="#">Mapa do Site</a></li>
+        </ul>
       </div>
       <div>
         <b>INFORMAÇÃO COORPORATIVA</b>
-        <a href="#">Sobre Nós</a>
-        <a href="#">Carreiras</a>
-        <a href="#">Imprensa</a>
-        <a href="#">Produto</a>
+        <ul>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Carreiras</a></li>
+          <li><a href="#">Imprensa</a></li>
+          <li><a href="#">Produto</a></li>
+        </ul>
       </div>
       <div>
         <b>LOJAS</b>
-        <a href="#">Localizador de Loja</a>
-        <a href="#">Cartões</a>
+        <ul>
+          <li><a href="#">Localizador de Loja</a></li>
+          <li><a href="#">Cartões</a></li>
+        </ul>
       </div>
     </footer>
     <!-- <script src="scripts/index.js"></script> -->
