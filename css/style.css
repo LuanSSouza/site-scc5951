@@ -7,16 +7,6 @@ body {
 }
 
 /* Header */
-@media screen and (max-width: 900px) {
-    header > .navbar {
-        display: none;
-    }
-
-    header > .navbar-mobile {
-        display: flex;
-    }
-}
-
 .navbar-mobile {
     display: none;
 }
@@ -137,6 +127,7 @@ body {
 /* Slides */
 
 /* Novidades */
+
 .novidades {
     overflow: auto;
     padding-left: 10px;
@@ -200,26 +191,83 @@ body {
 /* Card */
 
 /* Footer */
-footer {
+.footer-mobile {
+    display: none;
+}
+
+footer > div {
     height: 200px;
     bottom: 0;
     display: flex;
 }
 
-footer > div {
+footer > div > div {
    margin-left: 20px;
    margin-right: 40px;
 }
 
-footer ul {
+footer > div ul {
     margin-top: 5px;
     list-style-type: none;
     padding-left: 0px;
 }
 
-footer a {
+footer > div a {
     color: black;
     text-decoration: none;
     font-size: 14px;
 }
 /* Footer */
+
+/* Tablet */
+@media screen and (max-width: 800px) {
+    /* Header */
+    header > .navbar {
+        display: none;
+    }
+
+    header > .navbar-mobile {
+        display: flex;
+    }
+    /* Header */
+
+    /* Populares */
+    .categorias-populares {
+        display: none;
+    }
+    /* Populares */
+
+    /* Footer */
+    footer > .footer {
+        display: none;
+    }
+
+    footer > .footer-mobile {
+        display: flex;
+    }
+
+    .footer-mobile > div {
+        margin: auto;
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    /* Footer */
+}
+/* Tablet */
+
+/* Mobile */
+@media screen and (max-width: 500px) {
+    /* Novidades */
+    .novidades {
+        display: none;
+    }
+    /* Novidades */
+
+    /* Populares */
+    .categorias-populares {
+        display: none;
+    }
+    /* Populares */
+}
+
+/* Mobile */

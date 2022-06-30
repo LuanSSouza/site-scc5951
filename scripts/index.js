@@ -131,7 +131,7 @@ function init() {
   for (i = 0; i < sidebarItens.length; i++) {
     sidebarItens[i].addEventListener("click", function () {
       var subitem = this.nextElementSibling;
-      if (!subitem) return;
+      if (!subitem || !subitem.classList.contains("sidebar-subitens")) return;
       if (subitem.style.display === "block") {
         subitem.style.display = "none";
       } else {

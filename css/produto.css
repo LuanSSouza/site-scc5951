@@ -18,3 +18,18 @@
     padding: 10px;
 }
 /* Informações Produto */
+
+/* Tablet */
+@media screen and (max-width: 800px) {
+    #produto {
+        display: block;
+    }
+}
+/* Tablet */
+
+/* Mobile */
+@media screen and (max-width: 500px) {
+    
+}
+
+/* Mobile */
