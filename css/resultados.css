@@ -1,0 +1,12 @@
+
+/* Lista de Produtos e Recomendados */
+.recomendados, .lista-produtos {
+    overflow: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.recomendados > h2, .lista-produtos > h2 {
+    font-weight: bold;
+}
+/* Lista de Produtos e Recomendados */

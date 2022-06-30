@@ -88,29 +88,35 @@ function init() {
   // Obtendo elemento de slider
   var slidesContainer = document.getElementById("slides-container");
 
-  // Adicionando banners novidades a tela
-  slides.forEach(function (item) {
-    slidesContainer.appendChild(createSlide(item));
-  });
+  if (slidesContainer) {
+    // Adicionando banners novidades a tela
+    slides.forEach(function (item) {
+      slidesContainer.appendChild(createSlide(item));
+    });
 
-  // Tornando slide inicial visível
-  showSlide(slideIndex);
+    // Tornando slide inicial visível
+    showSlide(slideIndex);
+  }
 
   // Obtendo elemento de items novidades
   var listaNovidades = document.getElementById("lista-novidades");
 
-  // Adicionando items novidades a tela
-  novidades.forEach(function (item) {
-    listaNovidades.appendChild(createCard(item));
-  });
+  if (listaNovidades) {
+    // Adicionando items novidades a tela
+    novidades.forEach(function (item) {
+      listaNovidades.appendChild(createCard(item));
+    });
+  }
 
   // Obtendo elemento de items populares
   var listaPopulares = document.getElementById("lista-populares");
 
-  // Adicionando items populares a tela
-  populares.forEach(function (item) {
-    listaPopulares.appendChild(createCard(item));
-  });
+  if (listaNovidades) {
+    // Adicionando items populares a tela
+    populares.forEach(function (item) {
+      listaPopulares.appendChild(createCard(item));
+    });
+  }
 }
 
 init();
