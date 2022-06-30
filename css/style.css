@@ -252,6 +252,15 @@ footer > div a {
         margin-left: 10px;
     }
     /* Footer */
+
+    .novidades, .populares {
+        white-space: nowrap;
+    }
+
+    .card {
+        float: none;
+        display: inline-block;
+    }
 }
 /* Tablet */
 
