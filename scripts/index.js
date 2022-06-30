@@ -62,6 +62,9 @@ function createCard(value) {
   var card = document.createElement("div");
   card.className = "card";
 
+  // Criando link para o card
+  var cardLink = document.createElement("a");
+
   // Criando imagem
   var cardImage = document.createElement("img");
   cardImage.setAttribute("src", value.img);
@@ -73,7 +76,10 @@ function createCard(value) {
   // Adicionando textos ao card
   card.innerHTML += `<p><b>${value.title}</b></p> <p>${value.name}</p> <p>${value.type}</p>`;
 
-  return card;
+  cardLink.appendChild(card);
+  cardLink.setAttribute('href', 'produto.html');
+
+  return cardLink;
 }
 
 function showSlide(index) {
