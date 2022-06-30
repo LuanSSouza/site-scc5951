@@ -71,29 +71,41 @@
           <div id="produto-codigo">Código: EDXHBA</div>
           <div id="produto-avaliacao"></div>
           <div id="produto-opicoes">
-            <label for="select-tamanho">Tamanho</label>
-            <select name="select-tamanho" id="select-tamanho">
-              <option value="40">40</option>
-              <option value="41">41</option>
-            </select>
-            <label for="input-quantidade">Quantidade</label>
-            <input
-              type="number"
-              name="input-quantidade"
-              id="input-quantidade"
-            />
+            <div class="field">
+              <label for="select-tamanho">Tamanho</label>
+              <select name="select-tamanho" id="select-tamanho">
+                <option value="40">40</option>
+                <option value="41">41</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="input-quantidade">Quantidade</label>
+              <input
+                type="number"
+                name="input-quantidade"
+                id="input-quantidade"
+              />
+            </div>
           </div>
           <div id="produto-provador">
-            <a href="#">Medidas</a>
-            <a href="#">Provedor</a>
+            <div><a href="#">Medidas</a></div>
+            <div><a href="#">Provedor</a></div>
           </div>
           <div id="produto-compra">
-            <a href="pagamento.html"><button>Comprar agora</button></a>
-            <button>Adicionar ao Carrinho</button>
+            <div>
+              <a href="pagamento.html"><button class="btn-compra">Comprar agora</button></a>
+            </div>
+            <div><button class="btn-compra">Adicionar ao Carrinho</button></div>
           </div>
           <div id="produto-frete">
-            <label for="input-frete">Frete</label>
-            <input type="text" name="input-quantidade" id="input-quantidade" />
+            <div class="field">
+              <label for="input-frete">Frete</label>
+              <input
+                type="text"
+                name="input-quantidade"
+                id="input-quantidade"
+              />
+            </div>
           </div>
         </div>
       </div>
