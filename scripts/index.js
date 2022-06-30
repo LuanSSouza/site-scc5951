@@ -77,7 +77,7 @@ function createCard(value) {
   card.innerHTML += `<p><b>${value.title}</b></p> <p>${value.name}</p> <p>${value.type}</p>`;
 
   cardLink.appendChild(card);
-  cardLink.setAttribute('href', 'produto.html');
+  cardLink.setAttribute("href", "produto.html");
 
   return cardLink;
 }
@@ -123,6 +123,31 @@ function init() {
       listaPopulares.appendChild(createCard(item));
     });
   }
+
+  // Adicionando sidebar subitens
+  var sidebarItens = document.getElementsByClassName("sidebar-item");
+  var i;
+
+  for (i = 0; i < sidebarItens.length; i++) {
+    sidebarItens[i].addEventListener("click", function () {
+      var subitem = this.nextElementSibling;
+      if (!subitem) return;
+      if (subitem.style.display === "block") {
+        subitem.style.display = "none";
+      } else {
+        subitem.style.display = "block";
+      }
+    });
+  }
 }
 
 init();
+
+// Buttons actions
+function openSidebar() {
+  document.getElementById("sidebar").style.width = "250px";
+}
+
+function closeSidebar() {
+  document.getElementById("sidebar").style.width = "0px";
+}

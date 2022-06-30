@@ -14,23 +14,50 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="img/logo_ICMC.png" alt="Logo" /></a>
-      <div><a href="masculino.html">MASCULINO</a></div>
-      <div><a href="feminino.html">FEMININO</a></div>
-      <div><a href="infantil.html">INFANTIL</a></div>
-      <div>COMPRA RÁPIDA</div>
-      <div class="input-container">
-        <i class="material-icons">search</i>
-        <input type="text" name="input-busca" id="input-busca" />
-        <i class="material-icons final">mic</i>
+      <div class="navbar">
+        <a href="index.html"><img src="img/logo_ICMC.png" alt="Logo" /></a>
+        <div><a href="masculino.html">MASCULINO</a></div>
+        <div><a href="feminino.html">FEMININO</a></div>
+        <div><a href="infantil.html">INFANTIL</a></div>
+        <div>COMPRA RÁPIDA</div>
+        <div class="input-container">
+          <i class="material-icons">search</i>
+          <input type="text" name="input-busca" id="input-busca" />
+          <i class="material-icons final">mic</i>
+        </div>
+        <div>
+          <a href="busca_rapida.html">
+            <i class="material-icons">offline_bolt</i>
+          </a>
+        </div>
+        <div><i class="material-icons">account_circle</i></div>
+        <div><i class="material-icons">shopping_cart</i></div>
       </div>
-      <div>
-        <a href="busca_rapida.html">
-          <i class="material-icons">offline_bolt</i>
-        </a>
+
+      <div class="navbar-mobile">
+        <div onclick="openSidebar()" style="cursor: pointer">
+          <i class="material-icons">menu</i>
+        </div>
+        <a href="index.html"><img src="img/logo_ICMC.png" alt="Logo" /></a>
+        <div><i class="material-icons">shopping_cart</i></div>
       </div>
-      <div><i class="material-icons">account_circle</i></div>
-      <div><i class="material-icons">shopping_cart</i></div>
+
+      <div id="sidebar" class="sidebar">
+        <div class="closebtn" onclick="closeSidebar()">
+          <i class="material-icons">navigate_before</i>
+        </div>
+        <div class="sidebar-item">Promoções</div>
+        <div class="sidebar-subitens">
+          <a href="masculino.html">Masculino</a>
+          <a href="feminino.html">Feminino</a>
+          <a href="infantil.html">Infantil</a>
+          <a href="index.html">Todas</a>
+        </div>
+        <div class="sidebar-item">Masculino</div>
+        <div class="sidebar-item">Feminino</div>
+        <div class="sidebar-item">Infantil</div>
+        <div class="sidebar-item">Esporte</div>
+      </div>
     </header>
     <main>
       <div id="lista-produtos" class="lista-produtos">
@@ -114,6 +141,7 @@
         </ul>
       </div>
     </footer>
+    <script src="scripts/index.js"></script>
     <script src="scripts/infantil.js"></script>
   </body>
 </html>

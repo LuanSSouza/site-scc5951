@@ -7,21 +7,91 @@ body {
 }
 
 /* Header */
-header {
+@media screen and (max-width: 900px) {
+    header > .navbar {
+        display: none;
+    }
+
+    header > .navbar-mobile {
+        display: flex;
+    }
+}
+
+.navbar-mobile {
+    display: none;
+}
+
+.sidebar  {
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    border-style: none solid none none;
+    border-width: 2px;
+    border-color: #111;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 50%;
+    right: -1px;
+    font-size: 36px;
+    cursor: pointer;
+    padding-right: 10px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.sidebar > .sidebar-item {
+    padding: 8px 8px 8px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    border-style: solid none solid none;
+    border-width: 1px;
+}
+
+.sidebar > .sidebar-subitens {
+    display: none;
+}
+
+.sidebar > .sidebar-subitens a {
+    padding: 8px 8px 8px 40px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #e5e5e5;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    border-style: solid none solid none;
+    border-width: 1px;
+}
+
+.navbar {
     background-color: gray;
     display: flex;
 }
 
-header img {
+.navbar img, .navbar-mobile img {
     width: 50px;
 }
 
-header a {
+.navbar a {
     color: black;
     text-decoration: none;
 }
 
-header > div {
+.navbar div, .navbar-mobile div {
     padding: 5px;
     margin: auto;
 }
@@ -41,7 +111,7 @@ header > div {
     right: 10px;
 }
 
-header input {
+.navbar input {
     border-radius: 50px;
     border: 0px;
     height: 25px;
