@@ -1,45 +1,5 @@
-// Criando dados dos slides
-var slides = [
-  {
-    img: "img/slider_1.png",
-    name: "Banner",
-    text: "Até 75% OFF",
-  },
-  {
-    img: "img/slider_1.png",
-    name: "Banner",
-    text: "Até 75% OFF",
-  },
-];
-
 // Inicializando index dos slides
 var slideIndex = 0;
-
-// Criando dados dos cards novidades
-var novidades = [
-  {
-    img: "img/tenis1.jpg",
-    name: "Tenis de corrida",
-    title: "R$ 300,00",
-    type: "Corrida Casual",
-  },
-  {
-    img: "img/tenis1.jpg",
-    name: "Tenis de corrida",
-    title: "R$ 300,00",
-    type: "Corrida Casual",
-  },
-];
-
-// Criando dados dos cards populares
-var populares = [
-  {
-    img: "img/tenis1.jpg",
-    name: "Tenis de corrida",
-    title: "R$ 300,00",
-    type: "Corrida Casual",
-  },
-];
 
 function createSlide(value) {
   // Criando slide
