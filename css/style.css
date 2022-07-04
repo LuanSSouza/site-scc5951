@@ -253,14 +253,14 @@ footer > div a {
     }
     /* Footer */
 
-    .novidades, .populares {
+    /* .novidades, .populares {
         white-space: nowrap;
     }
 
     .card {
         float: none;
         display: inline-block;
-    }
+    } */
 }
 /* Tablet */
 

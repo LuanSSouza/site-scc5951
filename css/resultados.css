@@ -13,7 +13,7 @@
 
 /* Tablet */
 @media screen and (max-width: 800px) {
-    .recomendados, .lista-produtos {
+    /* .recomendados, .lista-produtos {
         overflow: auto;
         padding-left: 10px;
         padding-right: 10px;
@@ -23,6 +23,6 @@
     .card {
         float: none;
         display: inline-block;
-    }
+    } */
 }
 /* Tablet */
