@@ -19,8 +19,9 @@ function createSlide(value) {
 
 function createCard(value) {
   // Criando card
-  var card = document.createElement("div");
+  var card = document.createElement("a");
   card.className = "card";
+  card.setAttribute("href", "produto.html");
 
   // Criando link para o card
   var cardLink = document.createElement("a");
@@ -34,12 +35,9 @@ function createCard(value) {
   card.appendChild(cardImage);
 
   // Adicionando textos ao card
-  card.innerHTML += `<p><b>${value.title}</b></p> <p>${value.name}</p> <p>${value.type}</p>`;
+  card.innerHTML += `<p><b>${value.title}</b></p> <p>${value.name}</p> <p>${value.type}</p>`;  
 
-  cardLink.appendChild(card);
-  cardLink.setAttribute("href", "produto.html");
-
-  return cardLink;
+  return card;
 }
 
 function showSlide(index) {
@@ -57,7 +55,7 @@ function init() {
   if (slidesContainer) {
     // Adicionando banners novidades a tela
     slides.forEach(function (item) {
-      slidesContainer.appendChild(createSlide(item));
+      slidesContainer.append(createSlide(item));
     });
 
     // Tornando slide inicial visível
@@ -70,7 +68,7 @@ function init() {
   if (listaNovidades) {
     // Adicionando items novidades a tela
     novidades.forEach(function (item) {
-      listaNovidades.appendChild(createCard(item));
+      listaNovidades.append(createCard(item));
     });
   }
 
@@ -80,7 +78,7 @@ function init() {
   if (listaNovidades) {
     // Adicionando items populares a tela
     populares.forEach(function (item) {
-      listaPopulares.appendChild(createCard(item));
+      listaPopulares.append(createCard(item));
     });
   }
 

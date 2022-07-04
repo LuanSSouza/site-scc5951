@@ -4,7 +4,7 @@ function init() {
   if (listaMasculina) {
     // Adicionando items feminino a tela
     produtosMasculinos.forEach(function (item) {
-      listaMasculina.appendChild(createCard(item));
+      listaMasculina.append(createCard(item));
     });
   }
 
@@ -12,7 +12,7 @@ function init() {
   if (listaRecomendados) {
     // Adicionar items recomendados a tela
     produtosRecomendados.forEach(function (item) {
-      listaRecomendados.appendChild(createCard(item));
+      listaRecomendados.append(createCard(item));
     });
   }
 }
