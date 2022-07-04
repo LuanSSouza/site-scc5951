@@ -96,6 +96,21 @@
 }
 /* Informações Produto */
 
+/* Comentarios */
+.comentarios {
+    padding: 10px;
+}
+
+.comentario {
+    display: flex;
+}
+
+.comentario-imagem {
+    max-width: 200px;
+    margin: 10px;
+}
+/* Comentarios */
+
 /* Lista de Produtos e Recomendados */
 .recomendados {
     overflow: auto;
