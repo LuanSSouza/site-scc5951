@@ -96,6 +96,17 @@
 }
 /* Informações Produto */
 
+/* Lista de Produtos e Recomendados */
+.recomendados {
+    overflow: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.recomendados > h2 {
+    font-weight: bold;
+}
+/* Lista de Produtos e Recomendados */
+
 /* Tablet */
 @media screen and (max-width: 800px) {
     #produto {
