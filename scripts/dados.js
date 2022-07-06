@@ -16,6 +16,18 @@ var slides = [
 var novidades = [
   {
     img: "img/tenis1.jpg",
+    name: "Tenis de corrida Nike",
+    title: "R$ 300,00",
+    type: "Corrida Casual",
+  },
+  {
+    img: "img/m2.jpg",
+    name: "Tenis de corrida Adidas",
+    title: "R$ 300,00",
+    type: "Corrida Casual",
+  },
+  {
+    img: "img/m1.jpg",
     name: "Tenis de corrida",
     title: "R$ 300,00",
     type: "Corrida Casual",
@@ -26,6 +38,13 @@ var novidades = [
     title: "R$ 300,00",
     type: "Corrida Casual",
   },
+   {
+    img: "img/f1.jpg",
+    name: "Tenis de corrida",
+    title: "R$ 300,00",
+    type: "Corrida Casual",
+  },
+
 ];
 
 // Criando dados dos cards populares

@@ -1,190 +1,189 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <title>IPÉ</title>
-  </head>
-  <body>
-    <header>
-      <div class="navbar">
-        <a href="index.html"><img src="img/logo_ICMC.png" alt="Logo" /></a>
-        <div><a href="masculino.html">MASCULINO</a></div>
-        <div><a href="feminino.html">FEMININO</a></div>
-        <div><a href="infantil.html">INFANTIL</a></div>
-        <div>COMPRA RÁPIDA</div>
-        <div class="input-container">
-          <i class="material-icons">search</i>
-          <input type="text" name="input-busca" id="input-busca" />
-          <i class="material-icons final">mic</i>
-        </div>
-        <div>
-          <a href="busca_rapida.html">
-            <i class="material-icons">offline_bolt</i>
-          </a>
-        </div>
-        <div><i class="material-icons">account_circle</i></div>
-        <div><i class="material-icons">shopping_cart</i></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link 
+  rel="stylesheet" 
+  href="https://fonts.googleapis.com/icon?family=Material+Icons" 
+  />
+  <title>IPÉ</title>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a href="index.html"><img src="img/logo_ICMC.png" alt="Logo" /></a>
+      <div><a href="masculino.html">MASCULINO</a></div>
+      <div><a href="feminino.html">FEMININO</a></div>
+      <div><a href="infantil.html">INFANTIL</a></div>
+      <div class="input-container">
+        <i class="material-icons">search</i>
+        <input type="text" name="input-busca" id="input-busca" />
+        <i class="material-icons final">mic</i>
       </div>
+      <div>
+        <a href="busca_rapida.html">
+          <i class="material-icons">offline_bolt</i>
+        </a>
+      </div>
+      <div><i class="material-icons">account_circle</i></div>
+      <div><i class="material-icons">shopping_cart</i></div>
+    </div>
 
-      <div class="navbar-mobile">
-        <div onclick="openSidebar()" style="cursor: pointer">
-          <i class="material-icons">menu</i>
-        </div>
-        <a href="index.html"><img src="img/logo_ICMC.png" alt="Logo" /></a>
-        <div><i class="material-icons">shopping_cart</i></div>
+    <div class="navbar-mobile">
+      <div onclick="openSidebar()" style="cursor: pointer">
+        <i class="material-icons">menu</i>
       </div>
+      <a href="index.html"><img src="img/logo_ICMC.png" alt="Logo" /></a>
+      <div><i class="material-icons">shopping_cart</i></div>
+    </div>
 
-      <div id="sidebar" class="sidebar">
-        <div class="closebtn" onclick="closeSidebar()">
-          <i class="material-icons">navigate_before</i>
-        </div>
-        <div class="sidebar-item">Promoções</div>
-        <div class="sidebar-subitens">
-          <a href="masculino.html">Masculino</a>
-          <a href="feminino.html">Feminino</a>
-          <a href="infantil.html">Infantil</a>
-          <a href="index.html">Todas</a>
-        </div>
-        <div class="sidebar-item">Masculino</div>
-        <div class="sidebar-item">Feminino</div>
-        <div class="sidebar-item">Infantil</div>
-        <div class="sidebar-item">Esporte</div>
+    <div id="sidebar" class="sidebar">
+      <div class="closebtn" onclick="closeSidebar()">
+        <i class="material-icons">navigate_before</i>
       </div>
-    </header>
-    <main>
-      <form action="" method="post">
-        <fieldset>
-          <p>
-            <label
-              >Tênis:
-              <input type="text" name="fullname" placeholder="Tenis Favoritor"
-            /></label>
-          </p>
-          <p>
-            <label
-              >Tipo de esporte:
-              <input type="email" name="address" placeholder="Esporte"
-            /></label>
-          </p>
-          <p>
-            <label
-              >Gênero: <input type="text" name="desc" placeholder="Gênero"
-            /></label>
-          </p>
-          <input type="button" value="Voltar" onClick="history.go(-1)" />
-          <input type="button" value="Buscar" onCLick="history.forward()" />
-        </fieldset>
-      </form>
-    </main>
-    <hr />
-    <footer>
-      <div class="footer">
-        <div>
-          <b>PRODUTOS</b>
-          <ul>
-            <li><a href="#">Calçados</a></li>
-            <li><a href="#">Tênis</a></li>
-            <li><a href="#">Roupas</a></li>
-            <li><a href="#">Acessórios</a></li>
-            <li><a href="#">Chuteiras</a></li>
-            <li><a href="#">Quebra Vento</a></li>
-            <li><a href="#">Novidades</a></li>
-            <li><a href="#">Black Friday</a></li>
-            <li><a href="#">Outlet</a></li>
-            <li><a href="#">Cyber Monday</a></li>
-            <li><a href="#">adiClub</a></li>
-            <li><a href="#">adidas em Casa</a></li>
-            <li><a href="#">adidas app</a></li>
-            <li><a href="#">adidas Runner</a></li>
-          </ul>
-        </div>
-        <div>
-          <b>ESPORTES</b>
-          <ul>
-            <li><a href="#">Futebol</a></li>
-            <li><a href="#">São Paulo</a></li>
-            <li><a href="#">Internacional</a></li>
-            <li><a href="#">Flamengo</a></li>
-            <li><a href="#">Santos</a></li>
-            <li><a href="#">Federação</a></li>
-            <li><a href="#">Cruzeiro</a></li>
-            <li><a href="#">Corrida</a></li>
-            <li><a href="#">Basquete</a></li>
-            <li><a href="#">Training</a></li>
-          </ul>
-        </div>
-        <div>
-          <b>SUPORTE</b>
-          <ul>
-            <li><a href="#">Podemos Ajudar?</a></li>
-            <li><a href="#">Atendimento ao Cliente</a></li>
-            <li><a href="#">Dúvidas Frequentes</a></li>
-            <li><a href="#">Tabela de Tamanhos</a></li>
-            <li><a href="#">Vendas por Whatsapp</a></li>
-            <li><a href="#">Como Comprar</a></li>
-            <li><a href="#">Entregas e Frete</a></li>
-            <li><a href="#">Opções de Pagamento</a></li>
-            <li><a href="#">Troca e Devolução</a></li>
-            <li><a href="#">Usando Nosso Site</a></li>
-            <li><a href="#">Como Saber o Tamanho do seu Top</a></li>
-            <li><a href="#">O que é o adiClub</a></li>
-            <li><a href="#">Mapa do Site</a></li>
-          </ul>
-        </div>
-        <div>
-          <b>INFORMAÇÃO COORPORATIVA</b>
-          <ul>
-            <li><a href="#">Sobre Nós</a></li>
-            <li><a href="#">Carreiras</a></li>
-            <li><a href="#">Imprensa</a></li>
-            <li><a href="#">Produto</a></li>
-          </ul>
-        </div>
-        <div>
-          <b>LOJAS</b>
-          <ul>
-            <li><a href="#">Localizador de Loja</a></li>
-            <li><a href="#">Cartões</a></li>
-          </ul>
-        </div>
+      <div class="sidebar-item">Promoções</div>
+      <div class="sidebar-subitens">
+        <a href="masculino.html">Masculino</a>
+        <a href="feminino.html">Feminino</a>
+        <a href="infantil.html">Infantil</a>
+        <a href="index.html">Todas</a>
       </div>
-      <div class="footer-mobile">
-        <div>
-          <ul>
-            <li><a href="#">Atendimento ao Cliente</a></li>
-            <li><a href="#">Política de Entregas</a></li>
-            <li><a href="#">Trocas e Devoluções</a></li>
-            <li><a href="#">Política de Privacidade</a></li>
-            <li><a href="#">Termos e Condições de Uso</a></li>
-          </ul>
+      <div class="sidebar-item">Masculino</div>
+      <div class="sidebar-item">Feminino</div>
+      <div class="sidebar-item">Infantil</div>
+      <div class="sidebar-item">Esporte</div>
+    </div>
+  </header>
+  <main>
+    <h4><a href="index.html">Inicio</a> / Busca Rápida</h4>
+    <div id="produto">
+      <div id="informacoes-produto">
+        <label>Tênis:
+          <input type="text" name="fullname" placeholder="Tenis Favoritor" /></label>
+        </p>
+        <p>
+          <label>Tipo de esporte:
+            <input type="email" name="address" placeholder="Esporte" /></label>
+        </p>
+        <p>
+          <label>Gênero: <input type="text" name="desc" placeholder="Gênero" /></label>
+        </p>
+
+        <div id="Busca Rápida">
+          <div>
+            <a href="masculino.html"><button class="btn-compra">Buscar</button></a>
+            <input type="button" value="Voltar" onClick="history.go(-1)" />
+          </div>
         </div>
-        <div>
-          <ul>
-            <li><a href="#">Formas de Pagamento</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-    <script src="scripts/dados.js"></script>
-    <script src="scripts/index.js"></script>
-    <!-- VLibras -->
-    <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
       </div>
     </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-      new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
-    <!-- VLibras -->
-  </body>
+
+  </main>
+  <hr />
+  <footer>
+    <div class="footer">
+      <div>
+        <b>PRODUTOS</b>
+        <ul>
+          <li><a href="#">Calçados</a></li>
+          <li><a href="#">Tênis</a></li>
+          <li><a href="#">Roupas</a></li>
+          <li><a href="#">Acessórios</a></li>
+          <li><a href="#">Chuteiras</a></li>
+          <li><a href="#">Quebra Vento</a></li>
+          <li><a href="#">Novidades</a></li>
+          <li><a href="#">Black Friday</a></li>
+          <li><a href="#">Outlet</a></li>
+          <li><a href="#">Cyber Monday</a></li>
+          <li><a href="#">adiClub</a></li>
+          <li><a href="#">adidas em Casa</a></li>
+          <li><a href="#">adidas app</a></li>
+          <li><a href="#">adidas Runner</a></li>
+        </ul>
+      </div>
+      <div>
+        <b>ESPORTES</b>
+        <ul>
+          <li><a href="#">Futebol</a></li>
+          <li><a href="#">São Paulo</a></li>
+          <li><a href="#">Internacional</a></li>
+          <li><a href="#">Flamengo</a></li>
+          <li><a href="#">Santos</a></li>
+          <li><a href="#">Federação</a></li>
+          <li><a href="#">Cruzeiro</a></li>
+          <li><a href="#">Corrida</a></li>
+          <li><a href="#">Basquete</a></li>
+          <li><a href="#">Training</a></li>
+        </ul>
+      </div>
+      <div>
+        <b>SUPORTE</b>
+        <ul>
+          <li><a href="#">Podemos Ajudar?</a></li>
+          <li><a href="#">Atendimento ao Cliente</a></li>
+          <li><a href="#">Dúvidas Frequentes</a></li>
+          <li><a href="#">Tabela de Tamanhos</a></li>
+          <li><a href="#">Vendas por Whatsapp</a></li>
+          <li><a href="#">Como Comprar</a></li>
+          <li><a href="#">Entregas e Frete</a></li>
+          <li><a href="#">Opções de Pagamento</a></li>
+          <li><a href="#">Troca e Devolução</a></li>
+          <li><a href="#">Usando Nosso Site</a></li>
+          <li><a href="#">Como Saber o Tamanho do seu Top</a></li>
+          <li><a href="#">O que é o adiClub</a></li>
+          <li><a href="#">Mapa do Site</a></li>
+        </ul>
+      </div>
+      <div>
+        <b>INFORMAÇÃO COORPORATIVA</b>
+        <ul>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Carreiras</a></li>
+          <li><a href="#">Imprensa</a></li>
+          <li><a href="#">Produto</a></li>
+        </ul>
+      </div>
+      <div>
+        <b>LOJAS</b>
+        <ul>
+          <li><a href="#">Localizador de Loja</a></li>
+          <li><a href="#">Cartões</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-mobile">
+      <div>
+        <ul>
+          <li><a href="#">Atendimento ao Cliente</a></li>
+          <li><a href="#">Política de Entregas</a></li>
+          <li><a href="#">Trocas e Devoluções</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Termos e Condições de Uso</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><a href="#">Formas de Pagamento</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/dados.js"></script>
+  <script src="scripts/index.js"></script>
+  <!-- VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <!-- VLibras -->
+</body>
 </html>
