@@ -68,7 +68,7 @@ body {
 }
 
 .navbar {
-    background-color: gray;
+    background-color: #C4C4C4;
     display: flex;
 }
 
@@ -109,8 +109,12 @@ body {
     padding-right: 25px;
 }
 
-i.yellow {
-    color: #EBC351;
+.navbar a > i {
+    font-size: 36px;
+}
+
+.navbar i.yellow {
+    color: #dab244;
 }
 /* Header */
 
