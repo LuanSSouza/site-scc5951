@@ -6,6 +6,10 @@ main {
     display: flex;
 }
 
+#produto > div {
+    margin: auto;
+}
+
 /* Slide Produto */
 #slider-produto {
     max-width: 500px;
@@ -52,10 +56,8 @@ main {
 #produto-compra .btn-compra {
     margin: 10px;
     background-color: #C4C4C4;
-    border-radius: 20px;
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
+    border-radius: 10px;
+    border-style: none;
     cursor: pointer;
 }
 
