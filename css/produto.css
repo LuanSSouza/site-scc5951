@@ -1,3 +1,7 @@
+main {
+    padding: 20px;
+}
+
 #produto {
     display: flex;
 }
@@ -97,31 +101,21 @@
 /* Informações Produto */
 
 /* Especificações */
-.especificacoes {
-    padding: 10px;
-}
 /* Especificações */
 
 /* Comentarios */
-.comentarios {
-    padding: 10px;
-}
-
 .comentario {
     display: flex;
 }
 
 .comentario-imagem {
     max-width: 200px;
-    margin: 10px;
 }
 /* Comentarios */
 
 /* Lista de Produtos e Recomendados */
 .recomendados {
     overflow: auto;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 .recomendados > h2 {
     font-weight: bold;
