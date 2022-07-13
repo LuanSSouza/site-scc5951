@@ -30,7 +30,7 @@ body {
     position: absolute;
     top: 50%;
     right: -1px;
-    font-size: 36px;
+    font-size: 2.25em;
     cursor: pointer;
     padding-right: 10px;
     background-color: white;
@@ -42,7 +42,7 @@ body {
 .sidebar > .sidebar-item {
     padding: 8px 8px 8px 20px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1em;
     color: black;
     display: block;
     transition: 0.3s;
@@ -58,7 +58,7 @@ body {
     padding: 8px 8px 8px 40px;
     text-decoration: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1em;
     background-color: #e5e5e5;
     color: black;
     display: block;
@@ -91,10 +91,14 @@ body {
     position: relative;
 }
 
-.input-container > i {
+.input-container > .icon {
     position: absolute;
     padding: 4px;
-    font-size:20px;
+    width: 1.25em;
+}
+
+.input-container > .icon.right {
+    right: 4px;
 }
 
 .final {
@@ -109,13 +113,13 @@ body {
     padding-right: 25px;
 }
 
-.navbar a > i {
-    font-size: 36px;
+.navbar a > .icon {
+    width: 2.25em;
 }
-
-.navbar i.yellow {
+/* 
+.navbar img.yellow {
     color: #dab244;
-}
+} */
 /* Header */
 
 /* Slides */
@@ -224,7 +228,7 @@ footer > div ul {
 footer > div a {
     color: black;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.875em;
 }
 /* Footer */
 

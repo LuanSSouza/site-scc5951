@@ -1,184 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>IPÉ</title>
+    <link rel="icon" type="image/x-icon" href="img/fav.ico" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" />
-  <title>IPÉ</title>
-  <link rel="icon" type="image/x-icon" href="img/fav.ico">
-</head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div>
+          <a href="index.html"><img src="img/logo.png" alt="Logo" /></a>
+        </div>
+        <div><a href="masculino.html">MASCULINO</a></div>
+        <div><a href="feminino.html">FEMININO</a></div>
+        <div><a href="infantil.html">INFANTIL</a></div>
+        <div class="input-container">
+          <img
+            src="img/icons/search_24dp.svg"
+            alt="Ícone de busca."
+            class="icon"
+          />
+          <input type="text" name="input-busca" id="input-busca" />
+          <img
+            src="img/icons/mic_24dp.svg"
+            alt="Ícone do microfone."
+            class="icon right"
+          />
+        </div>
+        <div>
+          <a href="busca_rapida.html">
+            <img
+              src="img/icons/offline_bolt_24dp.svg"
+              alt="Ícone de busca rápida."
+              class="icon"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              src="img/icons/account_circle_24dp.svg"
+              alt="Ícone da conta do usuário."
+              class="icon"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              src="img/icons/shopping_cart_24dp.svg"
+              alt="Ícone do carrinho do usuário."
+              class="icon"
+            />
+          </a>
+        </div>
+      </div>
 
-<body>
-  <header>
-    <div class="navbar">
-      <div><a href="index.html"><img src="img/logo.png" alt="Logo" /></a></div>
-      <div><a href="masculino.html">MASCULINO</a></div>
-      <div><a href="feminino.html">FEMININO</a></div>
-      <div><a href="infantil.html">INFANTIL</a></div>
-      <div class="input-container">
-        <i class="material-icons">search</i>
-        <input type="text" name="input-busca" id="input-busca" />
-        <i class="material-icons final">mic</i>
+      <div class="navbar-mobile">
+        <div onclick="openSidebar()" style="cursor: pointer">
+          <img
+            src="img/icons/menu_24dp.svg"
+            alt="Ícone do menu."
+            class="icon"
+          />
+        </div>
+        <div>
+          <a href="index.html"><img src="img/logo.png" alt="Logo" /></a>
+        </div>
+        <div>
+          <img
+            src="img/icons/shopping_cart_24dp.svg"
+            alt="Ícone do carrinho do usuário."
+            class="icon"
+          />
+        </div>
       </div>
-      <div>
-        <a href="busca_rapida.html">
-          <i class="material-icons-outlined yellow">offline_bolt</i>
-        </a>
-      </div>
-      <div><a href="#"><i class="material-icons">account_circle</i></a></div>
-      <div><a href="#"><i class="material-icons">shopping_cart</i></a></div>
-    </div>
 
-    <div class="navbar-mobile">
-      <div onclick="openSidebar()" style="cursor: pointer">
-        <i class="material-icons">menu</i>
+      <div id="sidebar" class="sidebar">
+        <div class="closebtn" onclick="closeSidebar()">
+          <img
+            src="img/icons/navigate_before_24dp.svg"
+            alt="Ícone de ocultação do menu."
+            class="icon"
+          />
+        </div>
+        <div class="sidebar-item">Promoções</div>
+        <div class="sidebar-subitens">
+          <a href="masculino.html">Masculino</a>
+          <a href="feminino.html">Feminino</a>
+          <a href="infantil.html">Infantil</a>
+          <a href="index.html">Todas</a>
+        </div>
+        <div class="sidebar-item">Masculino</div>
+        <div class="sidebar-item">Feminino</div>
+        <div class="sidebar-item">Infantil</div>
+        <div class="sidebar-item">Esporte</div>
       </div>
-      <div><a href="index.html"><img src="img/logo.png" alt="Logo" /></a></div>
-      <div><i class="material-icons">shopping_cart</i></div>
+    </header>
+    <main>
+      <div id="slides-container"></div>
+      <div id="novidades" class="novidades">
+        <h2>NOVIDADES</h2>
+        <div id="lista-novidades"></div>
+      </div>
+      <div id="populares" class="populares">
+        <h2>POPULARES</h2>
+        <div class="categorias-populares">
+          <div><a href="#">CHUTEIRAS</a></div>
+          <div><a href="#">SANDALIAS</a></div>
+          <div><a href="#">CORRIDA</a></div>
+          <div><a href="#">PREÇOS IRRESISTÍVEIS</a></div>
+          <div><a href="#">UNISSEX</a></div>
+          <div><a href="#">YOGA</a></div>
+        </div>
+        <div id="lista-populares"></div>
+      </div>
+    </main>
+    <footer>
+      <hr />
+      <div class="footer">
+        <div>
+          <b>PRODUTOS</b>
+          <ul>
+            <li><a href="#">Calçados</a></li>
+            <li><a href="#">Tênis</a></li>
+            <li><a href="#">Roupas</a></li>
+            <li><a href="#">Acessórios</a></li>
+            <li><a href="#">Chuteiras</a></li>
+            <li><a href="#">Quebra Vento</a></li>
+            <li><a href="#">Novidades</a></li>
+            <li><a href="#">Black Friday</a></li>
+            <li><a href="#">Outlet</a></li>
+            <li><a href="#">Cyber Monday</a></li>
+            <li><a href="#">adiClub</a></li>
+            <li><a href="#">adidas em Casa</a></li>
+            <li><a href="#">adidas app</a></li>
+            <li><a href="#">adidas Runner</a></li>
+          </ul>
+        </div>
+        <div>
+          <b>ESPORTES</b>
+          <ul>
+            <li><a href="#">Futebol</a></li>
+            <li><a href="#">São Paulo</a></li>
+            <li><a href="#">Internacional</a></li>
+            <li><a href="#">Flamengo</a></li>
+            <li><a href="#">Santos</a></li>
+            <li><a href="#">Federação</a></li>
+            <li><a href="#">Cruzeiro</a></li>
+            <li><a href="#">Corrida</a></li>
+            <li><a href="#">Basquete</a></li>
+            <li><a href="#">Training</a></li>
+          </ul>
+        </div>
+        <div>
+          <b>SUPORTE</b>
+          <ul>
+            <li><a href="#">Podemos Ajudar?</a></li>
+            <li><a href="#">Atendimento ao Cliente</a></li>
+            <li><a href="#">Dúvidas Frequentes</a></li>
+            <li><a href="#">Tabela de Tamanhos</a></li>
+            <li><a href="#">Vendas por Whatsapp</a></li>
+            <li><a href="#">Como Comprar</a></li>
+            <li><a href="#">Entregas e Frete</a></li>
+            <li><a href="#">Opções de Pagamento</a></li>
+            <li><a href="#">Troca e Devolução</a></li>
+            <li><a href="#">Usando Nosso Site</a></li>
+            <li><a href="#">Como Saber o Tamanho do seu Top</a></li>
+            <li><a href="#">O que é o adiClub</a></li>
+            <li><a href="#">Mapa do Site</a></li>
+          </ul>
+        </div>
+        <div>
+          <b>INFORMAÇÃO COORPORATIVA</b>
+          <ul>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Carreiras</a></li>
+            <li><a href="#">Imprensa</a></li>
+            <li><a href="#">Produto</a></li>
+          </ul>
+        </div>
+        <div>
+          <b>LOJAS</b>
+          <ul>
+            <li><a href="#">Localizador de Loja</a></li>
+            <li><a href="#">Cartões</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-mobile">
+        <div>
+          <ul>
+            <li><a href="#">Atendimento ao Cliente</a></li>
+            <li><a href="#">Política de Entregas</a></li>
+            <li><a href="#">Trocas e Devoluções</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos e Condições de Uso</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><a href="#">Formas de Pagamento</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/dados.js"></script>
+    <script src="scripts/index.js"></script>
+    <!-- VLibras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
     </div>
-
-    <div id="sidebar" class="sidebar">
-      <div class="closebtn" onclick="closeSidebar()">
-        <i class="material-icons">navigate_before</i>
-      </div>
-      <div class="sidebar-item">Promoções</div>
-      <div class="sidebar-subitens">
-        <a href="masculino.html">Masculino</a>
-        <a href="feminino.html">Feminino</a>
-        <a href="infantil.html">Infantil</a>
-        <a href="index.html">Todas</a>
-      </div>
-      <div class="sidebar-item">Masculino</div>
-      <div class="sidebar-item">Feminino</div>
-      <div class="sidebar-item">Infantil</div>
-      <div class="sidebar-item">Esporte</div>
-    </div>
-  </header>
-  <main>
-    <div id="slides-container"></div>
-    <div id="novidades" class="novidades">
-      <h2>NOVIDADES</h2>
-      <div id="lista-novidades"></div>
-    </div>
-    <div id="populares" class="populares">
-      <h2>POPULARES</h2>
-      <div class="categorias-populares">
-        <div><a href="#">CHUTEIRAS</a></div>
-        <div><a href="#">SANDALIAS</a></div>
-        <div><a href="#">CORRIDA</a></div>
-        <div><a href="#">PREÇOS IRRESISTÍVEIS</a></div>
-        <div><a href="#">UNISSEX</a></div>
-        <div><a href="#">YOGA</a></div>
-      </div>
-      <div id="lista-populares"></div>
-    </div>
-  </main>
-  <footer>
-    <hr />
-    <div class="footer">
-      <div>
-        <b>PRODUTOS</b>
-        <ul>
-          <li><a href="#">Calçados</a></li>
-          <li><a href="#">Tênis</a></li>
-          <li><a href="#">Roupas</a></li>
-          <li><a href="#">Acessórios</a></li>
-          <li><a href="#">Chuteiras</a></li>
-          <li><a href="#">Quebra Vento</a></li>
-          <li><a href="#">Novidades</a></li>
-          <li><a href="#">Black Friday</a></li>
-          <li><a href="#">Outlet</a></li>
-          <li><a href="#">Cyber Monday</a></li>
-          <li><a href="#">adiClub</a></li>
-          <li><a href="#">adidas em Casa</a></li>
-          <li><a href="#">adidas app</a></li>
-          <li><a href="#">adidas Runner</a></li>
-        </ul>
-      </div>
-      <div>
-        <b>ESPORTES</b>
-        <ul>
-          <li><a href="#">Futebol</a></li>
-          <li><a href="#">São Paulo</a></li>
-          <li><a href="#">Internacional</a></li>
-          <li><a href="#">Flamengo</a></li>
-          <li><a href="#">Santos</a></li>
-          <li><a href="#">Federação</a></li>
-          <li><a href="#">Cruzeiro</a></li>
-          <li><a href="#">Corrida</a></li>
-          <li><a href="#">Basquete</a></li>
-          <li><a href="#">Training</a></li>
-        </ul>
-      </div>
-      <div>
-        <b>SUPORTE</b>
-        <ul>
-          <li><a href="#">Podemos Ajudar?</a></li>
-          <li><a href="#">Atendimento ao Cliente</a></li>
-          <li><a href="#">Dúvidas Frequentes</a></li>
-          <li><a href="#">Tabela de Tamanhos</a></li>
-          <li><a href="#">Vendas por Whatsapp</a></li>
-          <li><a href="#">Como Comprar</a></li>
-          <li><a href="#">Entregas e Frete</a></li>
-          <li><a href="#">Opções de Pagamento</a></li>
-          <li><a href="#">Troca e Devolução</a></li>
-          <li><a href="#">Usando Nosso Site</a></li>
-          <li><a href="#">Como Saber o Tamanho do seu Top</a></li>
-          <li><a href="#">O que é o adiClub</a></li>
-          <li><a href="#">Mapa do Site</a></li>
-        </ul>
-      </div>
-      <div>
-        <b>INFORMAÇÃO COORPORATIVA</b>
-        <ul>
-          <li><a href="#">Sobre Nós</a></li>
-          <li><a href="#">Carreiras</a></li>
-          <li><a href="#">Imprensa</a></li>
-          <li><a href="#">Produto</a></li>
-        </ul>
-      </div>
-      <div>
-        <b>LOJAS</b>
-        <ul>
-          <li><a href="#">Localizador de Loja</a></li>
-          <li><a href="#">Cartões</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-mobile">
-      <div>
-        <ul>
-          <li><a href="#">Atendimento ao Cliente</a></li>
-          <li><a href="#">Política de Entregas</a></li>
-          <li><a href="#">Trocas e Devoluções</a></li>
-          <li><a href="#">Política de Privacidade</a></li>
-          <li><a href="#">Termos e Condições de Uso</a></li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li><a href="#">Formas de Pagamento</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <script src="scripts/dados.js"></script>
-  <script src="scripts/index.js"></script>
-  <!-- VLibras -->
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
-  <!-- VLibras -->
-</body>
-
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+    <!-- VLibras -->
+  </body>
 </html>

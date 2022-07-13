@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/produto.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" />
   <title>IPÉ</title>
   <link rel="icon" type="image/x-icon" href="img/fav.ico">
 </head>
@@ -15,50 +14,96 @@
 
 <body>
   <header>
-    <div class="navbar">
-      <div><a href="index.html"><img src="img/logo.png" alt="Logo" /></a></div>
-      <div><a href="masculino.html">MASCULINO</a></div>
-      <div><a href="feminino.html">FEMININO</a></div>
-      <div><a href="infantil.html">INFANTIL</a></div>
-      <div class="input-container">
-        <i class="material-icons">search</i>
-        <input type="text" name="input-busca" id="input-busca" />
-        <i class="material-icons final">mic</i>
+      <div class="navbar">
+        <div>
+          <a href="index.html"><img src="img/logo.png" alt="Logo" /></a>
+        </div>
+        <div><a href="masculino.html">MASCULINO</a></div>
+        <div><a href="feminino.html">FEMININO</a></div>
+        <div><a href="infantil.html">INFANTIL</a></div>
+        <div class="input-container">
+          <img
+            src="img/icons/search_24dp.svg"
+            alt="Ícone de busca."
+            class="icon"
+          />
+          <input type="text" name="input-busca" id="input-busca" />
+          <img
+            src="img/icons/mic_24dp.svg"
+            alt="Ícone do microfone."
+            class="icon right"
+          />
+        </div>
+        <div>
+          <a href="busca_rapida.html">
+            <img
+              src="img/icons/offline_bolt_24dp.svg"
+              alt="Ícone de busca rápida."
+              class="icon"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              src="img/icons/account_circle_24dp.svg"
+              alt="Ícone da conta do usuário."
+              class="icon"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              src="img/icons/shopping_cart_24dp.svg"
+              alt="Ícone do carrinho do usuário."
+              class="icon"
+            />
+          </a>
+        </div>
       </div>
-      <div>
-        <a href="busca_rapida.html">
-          <i class="material-icons-outlined yellow">offline_bolt</i>
-        </a>
-      </div>
-      <div><a href="#"><i class="material-icons">account_circle</i></a></div>
-      <div><a href="#"><i class="material-icons">shopping_cart</i></a></div>
-    </div>
 
-    <div class="navbar-mobile">
-      <div onclick="openSidebar()" style="cursor: pointer">
-        <i class="material-icons">menu</i>
+      <div class="navbar-mobile">
+        <div onclick="openSidebar()" style="cursor: pointer">
+          <img
+            src="img/icons/menu_24dp.svg"
+            alt="Ícone do menu."
+            class="icon"
+          />
+        </div>
+        <div>
+          <a href="index.html"><img src="img/logo.png" alt="Logo" /></a>
+        </div>
+        <div>
+          <img
+            src="img/icons/shopping_cart_24dp.svg"
+            alt="Ícone do carrinho do usuário."
+            class="icon"
+          />
+        </div>
       </div>
-      <div><a href="index.html"><img src="img/logo.png" alt="Logo" /></a></div>
-      <div><i class="material-icons">shopping_cart</i></div>
-    </div>
 
-    <div id="sidebar" class="sidebar">
-      <div class="closebtn" onclick="closeSidebar()">
-        <i class="material-icons">navigate_before</i>
+      <div id="sidebar" class="sidebar">
+        <div class="closebtn" onclick="closeSidebar()">
+          <img
+            src="img/icons/navigate_before_24dp.svg"
+            alt="Ícone de ocultação do menu."
+            class="icon"
+          />
+        </div>
+        <div class="sidebar-item">Promoções</div>
+        <div class="sidebar-subitens">
+          <a href="masculino.html">Masculino</a>
+          <a href="feminino.html">Feminino</a>
+          <a href="infantil.html">Infantil</a>
+          <a href="index.html">Todas</a>
+        </div>
+        <div class="sidebar-item">Masculino</div>
+        <div class="sidebar-item">Feminino</div>
+        <div class="sidebar-item">Infantil</div>
+        <div class="sidebar-item">Esporte</div>
       </div>
-      <div class="sidebar-item">Promoções</div>
-      <div class="sidebar-subitens">
-        <a href="masculino.html">Masculino</a>
-        <a href="feminino.html">Feminino</a>
-        <a href="infantil.html">Infantil</a>
-        <a href="index.html">Todas</a>
-      </div>
-      <div class="sidebar-item">Masculino</div>
-      <div class="sidebar-item">Feminino</div>
-      <div class="sidebar-item">Infantil</div>
-      <div class="sidebar-item">Esporte</div>
-    </div>
-  </header>
+    </header>
   <main>
     <h1>Corrida Casual</h1>
     <div id="produto">
