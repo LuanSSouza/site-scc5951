@@ -289,3 +289,12 @@ footer > div a {
 }
 
 /* Mobile */
+
+/* Max resolution */
+@media screen and (min-width: 1600px) {
+    main, header, footer {
+        width: 1570px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
