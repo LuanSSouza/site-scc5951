@@ -63,24 +63,24 @@ function init() {
   }
 
   // Obtendo elemento de items novidades
-  var listaNovidades = document.getElementById("lista-novidades");
+  // var listaNovidades = document.getElementById("lista-novidades");
 
-  if (listaNovidades) {
-    // Adicionando items novidades a tela
-    novidades.forEach(function (item) {
-      listaNovidades.append(createCard(item));
-    });
-  }
+  // if (listaNovidades) {
+  //   // Adicionando items novidades a tela
+  //   novidades.forEach(function (item) {
+  //     listaNovidades.append(createCard(item));
+  //   });
+  // }
 
-  // Obtendo elemento de items populares
-  var listaPopulares = document.getElementById("lista-populares");
+  // // Obtendo elemento de items populares
+  // var listaPopulares = document.getElementById("lista-populares");
 
-  if (listaNovidades) {
-    // Adicionando items populares a tela
-    populares.forEach(function (item) {
-      listaPopulares.append(createCard(item));
-    });
-  }
+  // if (listaPopulares) {
+  //   // Adicionando items populares a tela
+  //   populares.forEach(function (item) {
+  //     listaPopulares.append(createCard(item));
+  //   });
+  // }
 
   // Adicionando sidebar subitens
   var sidebarItens = document.getElementsByClassName("sidebar-item");
