@@ -103,9 +103,16 @@ init();
 
 // Buttons actions
 function openSidebar() {
-  document.getElementById("sidebar").style.width = "250px";
+  document.getElementById("sidebar").style.display = "block";
+  setTimeout(function () {
+    document.getElementById("sidebar").style.width = "250px";
+  }, 10);
+  
 }
 
 function closeSidebar() {
   document.getElementById("sidebar").style.width = "0px";
+  setTimeout(function () {
+    document.getElementById("sidebar").style.display = "none";
+  }, 500);
 }

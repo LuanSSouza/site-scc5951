@@ -24,6 +24,7 @@ body {
     border-style: none solid none none;
     border-width: 2px;
     border-color: #111;
+    display: none;
 }
 
 .sidebar .closebtn {
