@@ -1,0 +1,84 @@
+main {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.busca-rapida {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: block;
+  width: 800px;
+}
+
+.field {
+  height: 30px;
+  margin: 50px auto 10px auto;
+  padding-right: 5px;
+  display: flex;
+  position: relative;
+}
+
+.field > label {
+  position: absolute;
+  top: -25px;
+  font-weight: 500;
+}
+
+.field > input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+.field > select {
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  height: 34px;
+  background-color: white;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.buttons-busca {
+    padding: 10px;
+    text-align: right;
+}
+
+.buttons-busca .btn-busca {
+    margin: 10px;
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+}
+
+/* Tablet */
+@media screen and (max-width: 800px) {
+    .busca-rapida {
+        width: 480px;
+    }
+}
+/* Tablet */
+
+/* Mobile */
+@media screen and (max-width: 500px) {
+    .busca-rapida {
+        width: 230px;
+    }
+
+    .buttons-busca {
+        text-align: center;
+    }
+    
+    .buttons-busca .btn-busca {
+        margin: 0px;
+    }
+}
