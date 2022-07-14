@@ -31,6 +31,10 @@ main {
     overflow: auto;
 }
 
+#produto-opicoes {
+    display: flex;
+}
+
 #produto-opicoes > div {
     width: 240px;
 }
@@ -112,6 +116,7 @@ main {
 
 .comentario-imagem {
     max-width: 200px;
+    margin-right: 10px;
 }
 /* Comentarios */
 
@@ -129,12 +134,47 @@ main {
     #produto {
         display: block;
     }
+    
+    #informacoes-produto {
+        padding: 10px;
+        width: auto;
+    }
 }
 /* Tablet */
 
 /* Mobile */
 @media screen and (max-width: 500px) {
+    main {
+        padding: 10px;
+    }
+
+    #produto-opicoes {
+        display: block;
+    }
     
+    #produto-opicoes > div {
+        width: 90%;
+    }
+    
+    #produto-compra {
+        padding: 0px;
+        text-align: center;
+    }
+
+    .comentario {
+        display: block;
+    }
+    
+    #produto-compra .btn-compra {
+        margin: 0px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    #produto-compra button.btn-compra {
+        width: 100%;
+        height: 40px;
+    }
 }
 
 /* Mobile */
